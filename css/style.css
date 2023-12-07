@@ -1,0 +1,637 @@
+@charset "UTF-8";
+
+/* main visual */
+main h2 {
+    font-family: 'yg-jalnan';
+    font-size: 50px;
+}
+
+.main-visual-wrap {
+    width: 1424px;
+}
+
+
+/* 이번 주 HOT 인기 펜션 */
+
+.weekly-best-pension {
+    width: 100%;
+    height: 1110px;
+    background-color: #fffef5;
+    padding-top: 150px;
+}
+
+.weekly-best-pension-tit {
+    color: #1e1e1e;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.weekly-best-pension-tit span {
+    color: #f7323f;
+    vertical-align: baseline;
+}
+.slick-track{
+    width: 1830px;
+    margin: 0 auto;
+}
+.weekly-best-pension .weekly-best-pension-cont {
+    
+    /* display: flex;
+    justify-content: space-between; */
+    position: relative;
+}
+
+.weekly-best-pension .weekly-best-pension-cont .item-img {
+    width: 350px;
+    height: 480px;
+}
+
+.weekly-best-pension .weekly-best-pension-cont .tit {
+    position: absolute;
+    bottom: 80px;
+    margin-left: 30px;
+    font-family: 'yg-jalnan';
+    font-size: 30px;
+    color: #fff;
+    line-height: 36px;
+}
+
+.weekly-best-pension .weekly-best-pension-cont .cont {
+    position: absolute;
+    bottom: 30px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.weekly-best-pension .weekly-best-pension-cont .cont .sale {
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #d80000;
+}
+
+.weekly-best-pension .weekly-best-pension-cont .cont .price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.weekly-best-pension .weekly-best-pension-cont .cont .original-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #c2c2c2;
+}
+
+.weekly-best-pension .weekly-best-pension-cont .item-label {
+    float: right;
+    width: 68px;
+    height: 68px;
+    background-color: #f7323f;
+    border-radius: 0px 10px 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 34px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weekly-best-pension .weekly-best-pension-cont .item-label>span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .weekly-best-pension .slick_bar {
+    position: relative;
+}
+
+.weekly-best-pension .slick_bar .btn_play {
+    position: absolute;
+    right: 480px;
+    top: 70px;
+    cursor: pointer;
+}
+
+.weekly-best-pension .slick_bar .btn_pause {
+    position: absolute;
+    right: 484px;
+    top: 70px;
+    cursor: pointer;
+    display: none;
+} */
+
+.weekly-best-pension .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: center;
+    width: 100%;
+    top: 120%;
+}
+
+.weekly-best-pension .bx-controls-auto .bx-start {
+    background: url(./images/play.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 350px;
+    top: 110px;
+}
+
+.weekly-best-pension .bx-controls-auto .bx-stop {
+    background: url(./images/pause.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 310px;
+    top: 110px;
+}
+
+
+.weekly-best-pension .btn_more {
+    position: absolute;
+    top: 164px;
+    width: 166px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 2px solid #f7323f;
+    color: #f7323f;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.weekly-best-pension .btn_more:hover {
+    transition-duration: 0.3s;
+    background-color: #f7323f;
+    border: 2px solid #f7323f;
+    color: #fff;
+}
+
+
+/* 최저가 숙소로 누리는 해외 인기 도시 */
+.oversea-best-city {
+    width: 100%;
+    height: 650px;
+    padding-top: 150px;
+}
+
+.oversea-best-city-tit {
+    color: #1e1e1e;
+    text-align: center;
+    line-height: 64px;
+    padding-bottom: 60px;
+}
+
+.oversea-best-city-tit span {
+    color: #0066cc;
+    vertical-align: baseline;
+}
+
+.oversea-best-city .oversea-best-city-wrap {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+
+/* .oversea-best-city .oversea-best-city-cont div{
+    position: relative;
+} */
+
+/* .oversea-best-city .oversea-best-city-cont img{
+    transition: 0.3s;
+}
+
+.oversea-best-city .oversea-best-city-cont img:hover{
+    transform: scale(1.1);
+} */
+
+.oversea-best-city .oversea-best-city-cont p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.oversea-best-city .bx-wrapper .bx-controls-direction  a{
+    margin-left: -60px;
+    margin-right: -60px;
+}
+
+
+
+/* 해외 항공 + 숙소 이번 주 특가 */
+.oversea-special-price {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.oversea-special-price-tit {
+    color: #fff;
+    line-height: 64px;
+    position: absolute;
+    top: 94px;
+    left: 46px;
+}
+
+.oversea-special-price-tit span {
+    color: #f7323f;
+    vertical-align: baseline;
+}
+
+.oversea-special-price-tit .special-banner-info {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    position: absolute;
+    top: 150px;
+}
+
+.special-banner {
+    width: 25%;
+    height: 800px;
+    border-left: 1px solid rgba(225, 225, 225, 0.2);
+}
+
+.special-banner:first-child {
+    border-left: 1px solid transparent;
+}
+
+.special-banner img {
+    display: none;
+}
+
+.special-banner #osaka {
+    position: absolute;
+    top: 560px;
+    left: 520px;
+    cursor: pointer;
+}
+
+.special-banner #bangkok {
+    position: absolute;
+    top: 560px;
+    left: 1002px;
+    cursor: pointer;
+}
+
+.special-banner #danang {
+    position: absolute;
+    top: 560px;
+    left: 1484px;
+    cursor: pointer;
+}
+
+.special-banner .oversea-special-price-tit .tag {
+    font-family: 'yg-jalnan';
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+.special-banner .oversea-special-price-tit .cont {
+    display: flex;
+    align-items: center;
+}
+
+.special-banner .oversea-special-price-tit .cont .sale {
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #d80000;
+}
+
+.special-banner .oversea-special-price-tit .cont .price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+    margin: 10px;
+}
+
+.special-banner .oversea-special-price-tit .cont .original-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.oversea-special-price .btn_more {
+    position: absolute;
+    top: 360px;
+    left: 46px;
+    width: 130px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oversea-special-price .btn_more:hover {
+    transition-duration: 0.3s;
+    background-color: #f7323f;
+    border: 2px solid #f7323f;
+    color: #fff;
+}
+
+
+/* 이벤트 */
+.event {
+    width: 100%;
+    height: 970px;
+    padding-top: 150px;
+}
+
+.event .event-tit {
+    color: #1e1e1e;
+    width: 150px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.event .event-item {
+    width: 1425px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+
+.event .event-img {
+    width: 450px;
+    height: 315px;
+}
+
+.event .event-info {
+    position: relative;
+    height: 100px;
+    padding-left: 10px;
+}
+
+.event .event-info .cont {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 22px;
+    color: #1e1e1e;
+    position: absolute;
+    top: 34px;
+}
+
+.event .event-info .event-period {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #a4a3a3;
+    position: absolute;
+    top: 70px;
+}
+
+.event .bx-controls .bx-controls-direction {
+    position: absolute;
+    top: 159px;
+    width: 1430px;
+}
+
+
+.event .btn_more {
+    width: 146px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: transparent;
+    border: 2px solid #f7323f;
+    color: #f7323f;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+}
+
+.event .btn_more:hover {
+    transition-duration: 0.3s;
+    background-color: #f7323f;
+    border: 2px solid #f7323f;
+    color: #fff;
+}
+
+.event .bx-controls-direction a {
+    margin-left: -60px;
+    margin-right: -60px;
+}
+
+/* 공지사항 */
+.news {
+    width: 100%;
+    height: 110px;
+    border-top: 1px solid #e0e0e0;
+    align-items: center;
+}
+
+.news-inner {
+    width: 1424px;
+    margin: 0px auto;
+    display: flex;
+    position: relative;
+}
+
+.news-tit h2 {
+    color: #1e1e1e;
+    font-size: 30px;
+    padding: 30px 0px;
+}
+
+.news .news-info a {
+    display: flex;
+    align-items: center;
+    width: 1300px;
+}
+
+.news .news-info .cont {
+    /* position: absolute; */
+    /* left: 30px; */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    color: #1e1e1e;
+    padding: 40px 100px;
+}
+
+.news .news-info .date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #6f6f6f;
+    position: absolute;
+    padding-left: 1130px;
+}
+
+.news .bx-wrapper .bx-prev{
+    background: url(./images/up_btn.png) no-repeat;
+}
+
+.news .bx-wrapper .bx-next{
+    background: url(./images/down_btn.png) no-repeat;
+}
+
+.news .bx-wrapper .bx-controls-direction a {
+    top: 80px;
+    left: 1280px;
+}
+
+.news .bx-wrapper .bx-controls-direction .bx-prev {
+    top: 50px;
+}
+
+/* 어플 다운 배너 */
+.app-banner {
+    width: 1920px;
+    height: 690px;
+    position: relative;
+}
+
+.app-tit {
+    color: #1e1e1e;
+    position: absolute;
+    top: 180px;
+    left: 980px;
+    text-align: center;
+}
+
+.app-tit h3 {
+    font-family: 'yg-jalnan';
+    font-size: 38px;
+}
+
+.app-tit h3 span {
+    color: #f7323f;
+    vertical-align: baseline;
+}
+
+.app-tit h4 {
+    font-family: 'yg-jalnan';
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.app-tit h4 span {
+    color: #0066cc;
+    vertical-align: baseline;
+}
+
+.app-coupon {
+    width: 680px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 320px;
+    left: 894px;
+}
+
+.app-coupon .point-box {
+    width: 160px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.app-coupon .point-box span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    color: #1e1e1e;
+    position: relative;
+    top: 20px;
+}
+
+.app-coupon .point-box h4 {
+    font-family: 'yg-jalnan';
+    font-size: 36px;
+    color: #1e1e1e;
+    position: relative;
+    top: 40px; 
+}
+
+.app-coupon .point-box h4::before {
+    content: "";
+    position: absolute;
+    width: 15%;
+    top: -6px;
+    left: 0;
+    border-bottom: 1px solid #bcbcbc;
+    right: 0;
+    margin: 0 auto;
+}
+
+.app-coupon #point01 {
+    background-color: #f7323f;
+    color: #fff;
+}
+
+.app-coupon .point-box #point01::before {
+    content: "";
+    width: 15%;
+    top: -6px;
+    left: 0;
+    border-bottom: 1px solid #fff;
+    right: 0;
+    margin: 0 auto;
+}
+
+.app-banner .btn_download {
+    position: absolute;
+    top: 564px;
+    left: 1166px;
+    width: 134px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #0066cc;
+    color: #0066cc;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-banner .btn_download:hover {
+    transition-duration: 0.3s;
+    background-color: #0066cc;
+    border: 2px solid #0066cc;
+    color: #fff;
+}

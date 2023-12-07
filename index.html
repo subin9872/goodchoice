@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여기어때</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-wrap">
+            <h1 class="logo">
+                <a href="./index.html"><img src="./img/logo.png" alt="여기어때로고"></a>
+            </h1>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="지역, 숙소명을 입력하세요"><button type="submit"
+                    class="searchButton"><img src="./img/search.png" alt="검색"></button>
+            </div>
+            <div class="search_on">
+                <div class="search_on_inner">
+                    <div class="btn_close"><a href="#"><img src="./img/close.png" alt="닫기"></a></div>
+                    <div class="recent_srch">
+                        <h4>최근 검색어</h4>
+                        <p>최근 검색 내역이 없습니다.</p>
+                    </div>
+                    <div class="rec_srch">
+                        <h4>추천 검색어</h4>
+                        <ul>
+                            <li><a href="#">오션뷰</a></li>
+                            <li><a href="#">파티룸</a></li>
+                            <li><a href="#">가족여행</a></li>
+                            <li><a href="#">야외수영장</a></li>
+                            <li><a href="#">애견동반펜션</a></li>
+                        </ul>
+                    </div>
+                    <div class="pop_srch">
+                        <h4>인기 검색어</h4>
+                        <ul>
+                            <ul>
+                                <li><span>1</span>속초</li>
+                                <li><span>2</span>여수</li>
+                                <li><span>3</span>제주도</li>
+                                <li><span>4</span>포항</li>
+                                <li><span>5</span>남해</li>
+                            </ul>
+                            <ul>
+                                <li><span>6</span>부산</li>
+                                <li><span>7</span>강릉</li>
+                                <li><span>8</span>가평</li>
+                                <li><span>9</span>서울</li>
+                                <li><span>10</span>양양</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="quick-menu">
+                <a href="#"><img src="./img/reservation.png" alt="빠른예약">빠른 예약</a>
+                <a href="#"><img src="./img/nearme.png" alt="내주변">내 주변</a>
+                <a href="#"><img src="./img/login.png" alt="로그인/회원가입">로그인/회원가입</a>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <ul class="place">
+                <li><a href="./sub02.html">프리미엄블랙</a></li>
+                <li>
+                    <a href="#">숙소</a>
+                    <nav id="stay" class="sub-menu">
+                        <ul>
+                            <li><a href="#">모텔</a></li>
+                            <li><a href="#">호텔</a></li>
+                            <li><a href="#">펜션.풀빌라</a></li>
+                            <li><a href="#">홈 & 빌라</a></li>
+                            <li><a href="#">캠핑 & 글램핑</a></li>
+                            <li><a href="#">게하.한옥</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li><a href="#">국내 항공</a></li>
+                <li><a href="#">렌터카</a></li>
+                <li><a href="#">레저.티켓</a></li>
+                <li><a href="#">맛집</a></li>
+                <li>
+                    <a href="#">해외 여행</a>
+                    <nav id="oversea" class="sub-menu">
+                        <ul>
+                            <li><a href="#">해외 항공</a></li>
+                            <li><a href="#">해외 숙소</a></li>
+                            <li><a href="#">항공 + 숙소</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+
+            <ul class="notice">
+                <li><a href="#">이벤트</a></li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <nav id="customer-service" class="sub-menu">
+                        <ul>
+                            <li><a href="#">공지 사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                            <li><a href="#">약관 및 정책</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+        </nav><b></b>
+    </header>
+
+
+    <main>
+        <!-- main visual -->
+        <div class="main-visual-wrap">
+            <video src="./img/main_video_02.mp4" autoplay="" muted="" playsinline=""></video>
+        </div>
+
+        <!-- 이번 주 HOT 인기 펜션 -->
+        <section class="weekly-best-pension">
+            <div class="weekly-best-pension-tit">
+                <h2 class="tit">이번 주 <span>HOT</span> 인기 펜션</h2>
+            </div>
+
+            <div class="slick-track">
+                <div class="weekly-best-pension-cont">
+                    <a href="./sub01.html">
+                        <div class="item-img" style="background-image: url(./img/hot01.png);">
+                            <div class="item-info">
+                                <p class="tit">횡성 까사 408</p>
+                                <div class="cont">
+                                    <p class="sale">11%</p>
+                                    <p class="price">80,190원</p>
+                                    <p class="original-price"><del>90,000원</del></p>
+                                </div>
+                            </div>
+                            <div class="item-label">1<span>위</span></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item-img" style="background-image: url(./img/hot02.png);">
+                            <div class="item-info">
+                                <p class="tit">포항 씨엔스톤</p>
+                                <div class="cont">
+                                    <p class="sale">1%</p>
+                                    <p class="price">84,150원</p>
+                                    <p class="original-price"><del>85,000원</del></p>
+                                </div>
+                            </div>
+                            <div class="item-label">2<span>위</span></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item-img" style="background-image: url(./img/hot03.png);">
+                            <div class="item-info">
+                                <p class="tit">청도 더포레 풀빌라</p>
+                                <div class="cont">
+                                    <p class="sale">11%</p>
+                                    <p class="price">105,910원</p>
+                                    <p class="original-price"><del>119,000원</del></p>
+                                </div>
+                            </div>
+                            <div class="item-label">3<span>위</span></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item-img" style="background-image: url(./img/hot04.png);">
+                            <div class="item-info">
+                                <p class="tit">가평 라온빌<br>스파 & 독채 펜션</p>
+                                <div class="cont">
+                                    <p class="sale">28%</p>
+                                    <p class="price">100,080원</p>
+                                    <p class="original-price"><del>139,000원</del></p>
+                                </div>
+                            </div>
+                            <div class="item-label">4<span>위</span></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item-img" style="background-image: url(./img/hot05.png);">
+                            <div class="item-info">
+                                <p class="tit">무주 흙집풍경펜션</p>
+                                <div class="cont">
+                                    <p class="sale">10%</p>
+                                    <p class="price">135,000원</p>
+                                    <p class="original-price"><del>150,000원</del></p>
+                                </div>
+                            </div>
+                            <div class="item-label">5<span>위</span></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item-img" style="background-image: url(./img/hot06.png);">
+                            <div class="item-info">
+                                <p class="tit">속초 더샵 스파 펜션</p>
+                                <div class="cont">
+                                    <p class="sale">6%</p>
+                                    <p class="price">196,460원</p>
+                                    <p class="original-price"><del>200,000원</del></p>
+                                </div>
+                            </div>
+                            <div class="item-label">6<span>위</span></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item-img" style="background-image: url(./img/hot07.png);">
+                            <div class="item-info">
+                                <p class="tit">통영 아라 풀빌라</p>
+                                <div class="cont">
+                                    <p class="sale">7%</p>
+                                    <p class="price">64,170원</p>
+                                    <p class="original-price"><del>69,000원</del></p>
+                                </div>
+                            </div>
+                            <div class="item-label">7<span>위</span></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item-img" style="background-image: url(./img/hot08.png);">
+                            <div class="item-info">
+                                <p class="tit">여수 낭만153펜션</p>
+                                <div class="cont">
+                                    <p class="sale">23%</p>
+                                    <p class="price">92,120원</p>
+                                    <p class="original-price"><del>120,000원</del></p>
+                                </div>
+                            </div>
+                            <div class="item-label">8<span>위</span></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item-img" style="background-image: url(./img/hot09.png);">
+                            <div class="item-info">
+                                <p class="tit">양편 우리펜션</p>
+                                <div class="cont">
+                                    <p class="sale">6%</p>
+                                    <p class="price">159,800원</p>
+                                    <p class="original-price"><del>170,000원</del></p>
+                                </div>
+                            </div>
+                            <div class="item-label">9<span>위</span></div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="item-img" style="background-image: url(./img/hot10.png);">
+                            <div class="item-info">
+                                <p class="tit">어썸키즈 풀빌라</p>
+                                <div class="cont">
+                                    <p class="sale">27%</p>
+                                    <p class="price">328,060원</p>
+                                    <p class="original-price"><del>449,000원</del></p>
+                                </div>
+                            </div>
+                            <div class="item-label">10<span>위</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- <div class="slick_bar">
+                <i class="btn_play" onclick="playPause()"><img src="./img/play.png" alt=""></i>
+                <i class="btn_pause" onclick="playPlay()"><img src="./img/pause.png" alt=""></i>
+            </div> -->
+
+            <a href="#">
+                <div class="btn_more">인기 펜션 더보기</div>
+            </a>
+        </section>
+
+        <!-- 최저가 숙소로 누리는 해외 인기 도시-->
+        <section class="oversea-best-city">
+            <div class="oversea-best-city-tit">
+                <h2 class="tit"><span>최저가 숙소</span>로 누리는<br>해외 인기 도시</h2>
+            </div>
+
+            <!-- slider -->
+            <div class="oversea-best-city-wrap">
+                <div class="oversea-best-city-cont">
+                    <div><a href="#"><img src="./img/city_osaka.png" alt="오사카">
+                            <p>오사카</p>
+                        </a></div>
+                    <div><a href="#"><img src="./img/city_fukuoka.png" alt="후쿠오카">
+                            <p>후쿠오카</p>
+                        </a></div>
+                    <div><a href="#"><img src="./img/city_tokyo.png" alt="도쿄">
+                            <p>도쿄</p>
+                        </a></div>
+                    <div><a href="#"><img src="./img/city_danang.png" alt="다낭">
+                            <p>다낭</p>
+                        </a></div>
+                    <div><a href="#"><img src="./img/city_kyoto.png" alt="쿄토">
+                            <p>쿄토</p>
+                        </a></div>
+                    <div><a href="#"><img src="./img/city_singapore.png" alt="싱가포르">
+                            <p>싱가포르</p>
+                        </a></div>
+                    <div><a href="#"><img src="./img/city_bangkok.png" alt="방콕">
+                            <p>방콕</p>
+                        </a></div>
+                    <div><a href="#"><img src="./img/city_kotakinabalu.png" alt="코타키나발루">
+                            <p>코타키나발루</p>
+                        </a></div>
+                    <div><a href="#"><img src="./img/city_cebu.png" alt="세부">
+                            <p>세부</p>
+                        </a></div>
+                    <div><a href="#"><img src="./img/city_hochimin.png" alt="호치민">
+                            <p>호치민</p>
+                        </a></div>
+                </div>
+            </div>
+
+            <!-- control arrows -->
+            <!-- <div class="control_arrows">
+                <div class="prev">
+                    <span><img src="./img/arrow_left.png" alt=""></span>
+                </div>
+                <div class="next">
+                    <span><img src="./img/arrow_right.png" alt=""></span>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- 해외 항공 + 숙소 이번 주 특가 -->
+        <section class="oversea-special-price" style="background-image: url(./img/sky.jpg);">
+            <div class="special-banner">
+                <div class="oversea-special-price-tit">
+                    <h2 class="tit">해외 <span>항공 + 숙소</span><br>이번 주 특가</h2>
+                    <p class="special-banner-info">어디로 떠날지 고민하는 여행자에게<br>유용한 여정 정보를 소개합니다.</p>
+                </div>
+                <a href="#">
+                    <div class="btn_more">특가 더보기</div>
+                </a>
+                <img src="./img/sky.jpg" alt="">
+            </div>
+
+            <div class="special-banner" class="special-banner01">
+                <div class="oversea-special-price-tit" id="osaka">
+                    <h2 class="tit">Osaka</h2>
+                    <p class="tag">#오사카 #신오사카 #유니버셜스튜디오<br>
+                        #USJ #워싱턴호텔 #2박3일 </p>
+                    <div class="cont">
+                        <p class="sale">35%</p>
+                        <p class="price">529,000원~</p>
+                        <p class="original-price"><del>816,000원</del></p>
+                    </div>
+                </div>
+                <img src="./img/osaka.jpg" alt="">
+            </div>
+
+            <div class="special-banner">
+                <div class="oversea-special-price-tit" id="bangkok">
+                    <h2 class="tit">Bangkok</h2>
+                    <p class="tag">#방콕 #신돈 #미드타운 <br>
+                        #조식포함 #반값특가 #3박 5일</p>
+                    <div class="cont">
+                        <p class="sale">44%</p>
+                        <p class="price">499,000원~</p>
+                        <p class="original-price"><del>899,000원</del></p>
+                    </div>
+                </div>
+                <img src="./img/bangkok.jpg" alt="">
+            </div>
+
+            <div class="special-banner">
+                <div class="oversea-special-price-tit" id="danang">
+                    <h2 class="tit">Danang</h2>
+                    <p class="tag">#다낭 #나만리트리트 #스위트룸 <br>
+                        #프라이빗픽업 #반값특가 #3박 5일</p>
+                    <div class="cont">
+                        <p class="sale">50%</p>
+                        <p class="price">499,000원~</p>
+                        <p class="original-price"><del>999,000원</del></p>
+                    </div>
+                </div>
+                <img src="./img/danang.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- 이벤트 -->
+        <section class="event">
+            <div class="event-tit">
+                <h2 class="tit">이벤트</h2>
+            </div>
+
+            <!-- slider -->
+            <div class="event-item">
+                <div class="event-inner">
+                    <a href="#">
+                        <div class="event-img" style="background-image: url(./img/event01.png);"></div>
+                        <div class="event-info">
+                            <div class="cont">23년 6월 하나카드 즉시할인 - 신용카드</div>
+                            <div class="event-period">기간: 2023.06.01 ~ 2023.06.30</div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="event-img" style="background-image: url(./img/event02.png);"></div>
+                        <div class="event-info">
+                            <div class="cont">트립홀릭 3기 모집 페이지</div>
+                            <div class="event-period">기간: 2023.06.01 ~ 2023.06.18</div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="event-img" style="background-image: url(./img/event03.png);"></div>
+                        <div class="event-info">
+                            <div class="cont">해외숙소 리뷰 오픈 기념 이벤트</div>
+                            <div class="event-period">기간: 2023.05.22 ~ 2023.06.30</div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="event-img" style="background-image: url(./img/event04.png);"></div>
+                        <div class="event-info">
+                            <div class="cont">7월 국내.해외 숙소 쿠폰팩</div>
+                            <div class="event-period">기간: 2023.06.01 ~ 2023.06.30</div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="event-img" style="background-image: url(./img/event05.png);"></div>
+                        <div class="event-info">
+                            <div class="cont">이번 주 특급호텔 공동구매</div>
+                            <div class="event-period">기간: 2023.06.01 ~ 2023.06.18</div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="event-img" style="background-image: url(./img/event06.png);"></div>
+                        <div class="event-info">
+                            <div class="cont">23년 놀이공원 할인대전 선착순 쿠폰 지급</div>
+                            <div class="event-period">기간: 2023.05.22 ~ 2023.06.30</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- control arrows -->
+            <!-- <div class="control_arrows">
+                <div class="prev">
+                    <span><img src="./img/arrow_left.png" alt=""></span>
+                </div>
+                <div class="next">
+                    <span><img src="./img/arrow_right.png" alt=""></span>
+                </div>
+            </div> -->
+
+            <a href="#">
+                <div class="btn_more">이벤트 더보기</div>
+            </a>
+        </section>
+
+        <!-- 공지사항 -->
+        <section class="news">
+            <div class="news-inner">
+                <div class="news-tit">
+                    <h2 class="tit">공지사항</h2>
+                </div>
+                <div class="news-info">
+                    <a href="#">
+                        <div class="cont">[발표] 여행할때 뮤비페어때 : 보령</div>
+                        <div class="date">2023.07.21</div>
+                    </a>
+
+
+                    <a href="#">
+                        <div class="cont">[발표] 7월 더블텐데이 2배 페이백 이벤트</div>
+                        <div class="date">2023.07.19</div>
+                    </a>
+
+
+                    <a href="#">
+                        <div class="cont">[발표] 7월 3차 여기어때 응원하기 이벤트</div>
+                        <div class="date">2023.07.11</div>
+                    </a>
+
+
+                    <a href="#">
+                        <div class="cont">[발표] 6월 리뷰왕을 찾습니다 당첨안내</div>
+                        <div class="date">2023.07.11</div>
+                    </a>
+
+                    <a href="#">
+                        <div class="cont">[발표] 6월 첫 리뷰 이벤트 당첨 안내</div>
+                        <div class="date">2023.07.11</div>
+                    </a>
+
+                    <a href="#">
+                        <div class="cont">[발표] 7월 2차 여기어때 응원하기 이벤트</div>
+                        <div class="date">2023.07.10</div>
+                    </a>
+                </div>
+
+                <!-- control arrows -->
+                <!-- <div class="control_arrows">
+                    <div class="up">
+                        <a href="#"><span><img src="./img/up_btn.png" alt=""></span></a>
+                    </div>
+                    <div class="down">
+                        <a href="#"><span><img src="./img/down_btn.png" alt=""></span></a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- 어플 다운 배너  -->
+        <section>
+            <div class="app-banner" style="background-image: url(./img/app_banner.jpg);">
+                <div class="app-banner-inner">
+                    <div class="app-tit">
+                        <h3 class="tit"><span>여기어때</span> APP 다운받고</h3>
+                        <h4 class="tit">1분만에 <span>7,000P</span>를 겟!</h4>
+                    </div>
+
+                    <div class="app-coupon">
+                        <div class="point-box" id="point01">
+                            <span id="point01">APP <br> 첫로그인</span>
+                            <h4 id="point01">1,000P</h4>
+                        </div>
+                        <div class="point-box">
+                            <span>평생회원 <br> 동의</span>
+                            <h4>1,000P</h4>
+                        </div>
+                        <div class="point-box">
+                            <span>APP <br> Push ON</span>
+                            <h4>2,000P</h4>
+                        </div>
+                        <div class="point-box">
+                            <span>첫 적립 <br> 이벤트 참여</span>
+                            <h4>3,000P</h4>
+                        </div>
+                    </div>
+
+                    <a href="https://apps.apple.com/kr/app/%EC%97%AC%EA%B8%B0%EC%96%B4%EB%95%8C-%ED%98%B8%ED%85%94-%EB%AA%A8%ED%85%94-%ED%8E%9C%EC%85%98-%ED%95%AD%EA%B3%B5%EA%B6%8C-%EC%B5%9C%EC%A0%80%EA%B0%80-%EC%98%88%EC%95%BD/id884043462" target="_blank">
+                        <div class="btn_download">앱 다운로드</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="inner">
+            <div class="footer-menu">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#"><strong>개인정보처리방침</strong></a>
+                <a href="#">소비자 분쟁해결 기준</a>
+                <a href="#">사업자 정보확인</a>
+                <a href="#">여기어때 마케팅센터</a>
+                <a href="#">HOTEL 여기어때</a>
+                <a href="#">콘텐츠사업진흥법에의한 표시</a>
+            </div>
+        </div>
+
+
+
+        <div class="footer-cont">
+            <dl>
+                <dt>여기어때 Information</dt>
+                <dd>(주) 여기어때컴퍼니 : 정명훈<br>
+                    사업자등록번호: 742-86-00224<br>
+                    통신판매번호 : 2017-서울강남-01779<br>
+                    관광사업자 등록번호: 제1026-24호<br>
+                    호스팅서비스제공자의 상호 표시: (주)여기어때컴퍼니
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>Address & Contact</dt>
+                <dd class="tel"><a href="tel:02-1670 - 6250">대표번호 : 1670 - 6250</a><br>
+                    주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>Follow Us</dt>
+                <dd class="email"><a href="mailto:help@goodchoice.kr">전자우편주소 : help@goodchoice.kr</a></dd>
+                <div class="footer-sns">
+                    <a href="#"><img src="./img/facebook_icon.png" alt="페이스북"></a>
+                    <a href="#"><img src="./img/instagram_icon.png" alt="인스타그램"></a>
+                    <a href="#"><img src="./img/youtube_icon.png" alt="유튜브"></a>
+                </div>
+            </dl>
+        </div>
+    </footer>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="./img/top_btn.png" alt=""></button>
+
+</body>
+
+</html>

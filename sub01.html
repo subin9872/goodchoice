@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/sub01.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/sub01.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="header-wrap">
+            <h1 class="logo">
+                <a href="./index.html"><img src="./img/logo.png" alt="여기어때로고"></a>
+            </h1>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="지역, 숙소명을 입력하세요"><button type="submit"
+                    class="searchButton"><img src="./img/search.png" alt="검색"></button>
+            </div>
+            <div class="search_on">
+                <div class="search_on_inner">
+                    <div class="btn_close"><a href="#"><img src="./img/close.png" alt="닫기"></a></div>
+                    <div class="recent_srch">
+                        <h4>최근 검색어</h4>
+                        <p>최근 검색 내역이 없습니다.</p>
+                    </div>
+                    <div class="rec_srch">
+                        <h4>추천 검색어</h4>
+                        <ul>
+                            <li><a href="#">오션뷰</a></li>
+                            <li><a href="#">파티룸</a></li>
+                            <li><a href="#">가족여행</a></li>
+                            <li><a href="#">야외수영장</a></li>
+                            <li><a href="#">애견동반펜션</a></li>
+                        </ul>
+                    </div>
+                    <div class="pop_srch">
+                        <h4>인기 검색어</h4>
+                        <ul>
+                            <ul>
+                                <li><span>1</span>속초</li>
+                                <li><span>2</span>여수</li>
+                                <li><span>3</span>제주도</li>
+                                <li><span>4</span>포항</li>
+                                <li><span>5</span>남해</li>
+                            </ul>
+                            <ul>
+                                <li><span>6</span>부산</li>
+                                <li><span>7</span>강릉</li>
+                                <li><span>8</span>가평</li>
+                                <li><span>9</span>서울</li>
+                                <li><span>10</span>양양</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-menu">
+                <a href="#"><img src="./img/reservation.png" alt="빠른예약">빠른 예약</a>
+                <a href="#"><img src="./img/nearme.png" alt="내주변">내 주변</a>
+                <a href="#"><img src="./img/login.png" alt="로그인/회원가입">로그인/회원가입</a>
+            </div>
+        </div>
+        <nav class="main-menu">
+            <ul class="place">
+                <li><a href="./sub02.html">프리미엄블랙</a></li>
+                <li>
+                    <a href="#">숙소</a>
+                    <nav id="stay" class="sub-menu">
+                        <ul>
+                            <li><a href="#">모텔</a></li>
+                            <li><a href="#">호텔</a></li>
+                            <li><a href="#">펜션.풀빌라</a></li>
+                            <li><a href="#">홈 & 빌라</a></li>
+                            <li><a href="#">캠핑 & 글램핑</a></li>
+                            <li><a href="#">게하.한옥</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li><a href="#">국내 항공</a></li>
+                <li><a href="#">렌터카</a></li>
+                <li><a href="#">레저.티켓</a></li>
+                <li><a href="#">맛집</a></li>
+                <li>
+                    <a href="#">해외 여행</a>
+                    <nav id="oversea" class="sub-menu">
+                        <ul>
+                            <li><a href="#">해외 항공</a></li>
+                            <li><a href="#">해외 숙소</a></li>
+                            <li><a href="#">항공 + 숙소</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+
+            <ul class="notice">
+                <li><a href="#">이벤트</a></li>
+                <li>
+                    <a href="#">고객센터</a>
+                    <nav id="customer-service" class="sub-menu">
+                        <ul>
+                            <li><a href="#">공지 사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                            <li><a href="#">약관 및 정책</a></li>
+                        </ul>
+                    </nav>
+                </li>
+            </ul>
+        </nav><b></b>
+    </header>
+
+    <!-- 메인 -->
+    <main>
+        <section class="detail_page">
+            <div class="main_info">
+                <h2>횡성까사 408</h2>
+                <div class="main_info_detail">
+                    <p><img src="./img/place_icon.png" alt=""> 강원 횡성군 둔내면 두원리 408-1 <a href="#">지도보기</a></p>
+                    <p><img src="./img/rate_icon.png" alt=""><span>4.9</span><a href="#">리뷰 29개 보기</a></p>
+                </div>
+                <div class="icon">
+                    <img src="./img/like_icon.png" alt="">
+                    <img src="./img/share_icon.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="main_wrap">
+            <div class="main_wrap_inner">
+                <div class="gallery_slider">
+                    <ul class="gallery_main">
+                        <li><img src="./img/main01.png"></li>
+                        <li><img src="./img/main02.png"></li>
+                        <li><img src="./img/main03.png"></li>
+                        <li><img src="./img/main04.png"></li>
+                        <li><img src="./img/main05.png"></li>
+                        <li><img src="./img/main06.png"></li>
+                    </ul>
+
+                    <div class="thumnail_img">
+                        <a data-slide-index="0" href="#"><img src="./img/thumnail01.png"></a>
+                        <a data-slide-index="1" href="#"><img src="./img/thumnail02.png"></a>
+                        <a data-slide-index="2" href="#"><img src="./img/thumnail03.png"></a>
+                        <a data-slide-index="3" href="#"><img src="./img/thumnail04.png"></a>
+                        <a data-slide-index="4" href="#"><img src="./img/thumnail05.png"></a>
+                        <a data-slide-index="5" href="#"><img src="./img/thumnail06.png"></a>
+                    </div>
+                </div>
+                <!-- <div class="gallery_slider">
+                        <a href="#">
+                            <div class="main-img" style="background-image: url(./img/main01.png);"></div>
+                        </a>
+                        <div class="thumnail_img">
+                            <a href="#">
+                                <div class="item-img" style="background-image: url(./img/main02.png);"></div>
+                            </a>
+                            <a href="#">
+                                <div class="item-img" style="background-image: url(./img/main03.png);"></div>
+                            </a>
+                            <a href="#">
+                                <div class="item-img" style="background-image: url(./img/main04.png);"></div>
+                            </a>
+                            <a href="#">
+                                <div class="item-img" style="background-image: url(./img/main05.png);"></div>
+                            </a>
+                            <a href="#">
+                                <div class="item-img" style="background-image: url(./img/main06.png);"></div>
+                            </a>
+                        </div> -->
+
+
+                <!-- 객실타입 -->
+                <div class="room_type">
+                    <h3>객실 타입</h3>
+                    <div class="room_type_inner">
+                        <!-- 커플102 -->
+                        <div class="room">
+                            <a href="#"><img src="./img/102.png" alt=""></a>
+                            <div class="room_name">
+                                <h2>커플 102</h2>
+                                <a href="#">자세히 보기 <img src="./img/more_btn_icon.png" alt=""></a>
+                            </div>
+                            <div class="room_detail">
+                                <div class="room_info">
+                                    <div class="space">
+                                        <p>방 구조</p>
+                                        <span>객실 + 욕실 / 10 평</span>
+                                    </div>
+                                    <div class="person">
+                                        <p>투숙인원</p>
+                                        <span>2명</span>
+                                    </div>
+                                </div>
+                                <div class="room_price">
+                                    <p class="original-price"><del>90,000원</del></p>
+                                    <div class="price_inner">
+                                        <p class="sale">13%</p>
+                                        <p class="price">78,570원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 스위트201 -->
+                        <div class="room">
+                            <a href="#"><img src="./img/201.png" alt=""></a>
+                            <div class="room_name">
+                                <h2>스위트 201</h2>
+                                <a href="#">자세히 보기 <img src="./img/more_btn_icon.png" alt=""></a>
+                            </div>
+                            <div class="room_detail">
+                                <div class="room_info">
+                                    <div class="space">
+                                        <p>방 구조</p>
+                                        <span>객실 + 거실 + 욕실 / 18 평</span>
+                                    </div>
+                                    <div class="person">
+                                        <p>투숙인원</p>
+                                        <span>2명 (최대 4명)</span>
+                                    </div>
+                                </div>
+                                <div class="room_price">
+                                    <p class="original-price"><del>110,000원</del></p>
+                                    <div class="price_inner">
+                                        <p class="sale">13%</p>
+                                        <p class="price">96,030원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 스위트202 -->
+                        <div class="room">
+                            <a href="#"><img src="./img/202.png" alt=""></a>
+                            <div class="room_name">
+                                <h2>스위트 202</h2>
+                                <a href="#">자세히 보기 <img src="./img/more_btn_icon.png" alt=""></a>
+                            </div>
+                            <div class="room_detail">
+                                <div class="room_info">
+                                    <div class="space">
+                                        <p>방 구조</p>
+                                        <span>객실 + 거실 + 욕실/ 20 평</span>
+                                    </div>
+                                    <div class="person">
+                                        <p>투숙인원</p>
+                                        <span>2명 (최대 4명)</span>
+                                    </div>
+                                </div>
+                                <div class="room_price">
+                                    <p class="original-price"><del>110,000원</del></p>
+                                    <div class="price_inner">
+                                        <p class="sale">13%</p>
+                                        <p class="price">96,030원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 복층301 -->
+                        <div class="room">
+                            <a href="#"><img src="./img/301.png" alt=""></a>
+                            <div class="room_name">
+                                <h2>복층 301</h2>
+                                <a href="#">자세히 보기 <img src="./img/more_btn_icon.png" alt=""></a>
+                            </div>
+                            <div class="room_detail">
+                                <div class="room_info">
+                                    <div class="space">
+                                        <p>방 구조</p>
+                                        <span>객실 + 거실 + 욕실 / 18 평</span>
+                                    </div>
+                                    <div class="person">
+                                        <p>투숙인원</p>
+                                        <span>2명 (최대 4명)</span>
+                                    </div>
+                                </div>
+                                <div class="room_price">
+                                    <p class="original-price"><del>110,000원</del></p>
+                                    <div class="price_inner">
+                                        <p class="sale">13%</p>
+                                        <p class="price">96,030원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 복층302 -->
+                        <div class="room">
+                            <a href="#"><img src="./img/302.png" alt=""></a>
+                            <div class="room_name">
+                                <h2>복층 302</h2>
+                                <a href="#">자세히 보기 <img src="./img/more_btn_icon.png" alt=""></a>
+                            </div>
+                            <div class="room_detail">
+                                <div class="room_info">
+                                    <div class="space">
+                                        <p>방 구조</p>
+                                        <span>객실 + 거실 + 욕실 / 18 평</span>
+                                    </div>
+                                    <div class="person">
+                                        <p>투숙인원</p>
+                                        <span>2명 (최대 4명)</span>
+                                    </div>
+                                </div>
+                                <div class="room_price">
+                                    <p class="original-price"><del>110,000원</del></p>
+                                    <div class="price_inner">
+                                        <p class="sale">13%</p>
+                                        <p class="price">96,030원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 패밀리101 -->
+                        <div class="room">
+                            <a href="#"><img src="./img/101.png" alt=""></a>
+                            <div class="room_name">
+                                <h2>패밀리 101</h2>
+                                <a href="#">자세히 보기 <img src="./img/more_btn_icon.png" alt=""></a>
+                            </div>
+                            <div class="room_detail">
+                                <div class="room_info">
+                                    <div class="space">
+                                        <p>방 구조</p>
+                                        <span>객실 + 거실 + 욕실 / 30 평</span>
+                                    </div>
+                                    <div class="person">
+                                        <p>투숙인원</p>
+                                        <span>4명 (최대 6명)</span>
+                                    </div>
+                                </div>
+                                <div class="room_price">
+                                    <p class="original-price"><del>180,000원</del></p>
+                                    <div class="price_inner">
+                                        <p class="sale">13%</p>
+                                        <p class="price">157,140원</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 숙소정보 -->
+                <div class="regulation">
+                    <h3>숙소 정보</h3>
+                    <div class="place_offer">
+                        <h4>편의시설</h4>
+                        <div class="offer_icon">
+                            <ul>
+                                <li><img src="./img/swimmingpool.png" alt=""><span>수영장</span></li>
+                                <li><img src="./img/cooking.png" alt=""><span>취사가능</span></li>
+                                <li><img src="./img/restaurant.png" alt=""><span>주방/식당</span></li>
+                                <li><img src="./img/shampoo.png" alt=""><span>욕실용품</span></li>
+                                <li><img src="./img/tv.png" alt=""><span>TV</span></li>
+                                <li><img src="./img/card.png" alt=""><span>카드결제</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="basic_info">
+                            <h4>기본 정보</h4>
+                            <p>체크인 : 15:00 | 체크아웃 : 11:00 <br>
+                                22시 이후 입실 시 사전문의 (필수) <br>
+                                무료 Wi-Fi <br>
+                                전 객실 금연 <br>
+                                주차 가능 <br>
+                                펜션 픽업 (KTX 둔내역, 둔내버스터미널 / 15:00~17:00 / 사전예약 및 문의필수) <br>
+                                마트 픽업 (하나로마트 / 15:00~17:00 / 일정금액이상 구매시 가능 / 예약시 신청 / 펜션문의)</p>
+                        </div>
+
+                        <div class="add_person">
+                            <h4>인원 추가 정보</h4>
+                            <p>1인 20,000원 (영유아 포함) <br>
+                                영유아 인원수 포함 / 최대인원 초과불가 <br>
+                                현장 결제</p>
+                        </div>
+
+                        <div class="nearby_info">
+                            <h4>주변 정보</h4>
+                            <p>웰리힐리파크 차량 6분 <br>
+                                주천강자연휴양림 차량 23분 <br>
+                                국립청태산자연휴양림 차량 23분</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 고객리뷰 -->
+                <div class="customer_review">
+                    <h3>고객 리뷰</h3>
+                    <span class="star_checked"><img src="./img/fivestar_icon.png" alt=""></span>
+                    <p class="rate">4.9 <span>/ 5</span></p>
+                    <div class="review_rate">
+                        <div class="row">
+                            <div class="side">
+                                <div>5점</div>
+                            </div>
+                            <div class="middle">
+                                <div class="bar-container">
+                                    <div class="bar-5"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                                <div>15</div>
+                            </div>
+                            <div class="side">
+                                <div>4점</div>
+                            </div>
+                            <div class="middle">
+                                <div class="bar-container">
+                                    <div class="bar-4"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                                <div>1</div>
+                            </div>
+                            <div class="side">
+                                <div>3점</div>
+                            </div>
+                            <div class="middle">
+                                <div class="bar-container">
+                                    <div class="bar-3"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                                <div>0</div>
+                            </div>
+                            <div class="side">
+                                <div>2점</div>
+                            </div>
+                            <div class="middle">
+                                <div class="bar-container">
+                                    <div class="bar-2"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                                <div>0</div>
+                            </div>
+                            <div class="side">
+                                <div>1점</div>
+                            </div>
+                            <div class="middle">
+                                <div class="bar-container">
+                                    <div class="bar-1"></div>
+                                </div>
+                            </div>
+                            <div class="side right">
+                                <div>0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="number_rate">
+                        <p>청결도<span>5</span></p>
+                        <p>시설<span>5</span></p>
+                        <p>서비스<span>5</span></p>
+                        <p>가성비<span>4.6</span></p>
+                    </div>
+
+                    <div class="list_review">
+                        <div class="review_menu">
+                            <p>포토리뷰(392)</p>
+                            <select name="review" id="review">
+                                <option value="recent">최신순</option>
+                                <option value="reccommend">추천순</option>
+                                <option value="ratehigh">평점높은순</option>
+                                <option value="ratelow">평점낮은순</option>
+                            </select>
+                        </div>
+                        <ul>
+                            <li>
+                                <div class="review_area">
+                                    <div class="score">
+                                        <div class="user_name">
+                                            <span class="profile"><img src="./img/profile.png" alt=""></span>
+                                            <span class="user">12세취침</span>
+                                        </div>
+                                        <div class="rate_star">
+                                            <span class="num"><img src="./img/small_star.png" alt=""></span>
+                                            <span class="date">2023.06.16</span>
+                                        </div>
+                                    </div>
+                                    <div class="review_cont">
+                                        <div class="user_room">
+                                            <strong>복층형 301 객실 이용</strong>
+                                        </div>
+                                        <div class="eps">
+                                            급하게 펜션 알아보다가 예약했는데 하고 너무맘에 들었어요 <br>
+                                            청결은 말할것도 없었고 바베큐장이 거실과 이어져있어서 편하게 이용했어요 <br>
+                                            지대가 높아서 뷰도 정말 좋았습니다 사장님도 넘 친절하셨구여😊
+                                        </div>
+                                        <div class="review_like">
+                                            <img src="./img/review_heart.png" alt=""><span>8</span>
+                                        </div>
+                                    </div>
+                                    <div class="photo_review">
+                                        <img src="./img/review_img01.png" alt="">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="review_area">
+                                    <div class="score">
+                                        <div class="user_name">
+                                            <span class="profile"><img src="./img/profile.png" alt=""></span>
+                                            <span class="user">강촌유원지사령관</span>
+                                        </div>
+                                        <div class="rate_star">
+                                            <span class="num"><img src="./img/small_star.png" alt=""></span>
+                                            <span class="date">2023.03.02</span>
+                                        </div>
+                                    </div>
+                                    <div class="review_cont">
+                                        <div class="user_room">
+                                            <strong>복층형 301 객실 이용</strong>
+                                        </div>
+                                        <div class="eps">
+                                            남자친구랑 재밌게 놀다 왔습니다~ <br>
+                                            방은 사진이랑 똑같아요. 깔끔하고 이쁩니다. 조명이 많아서 어디서 찍어도 이쁘게 나오네요. <br>
+                                            팬션 앞에 막힌게 없어서 초록색 산 뷰도 제대로 보입니다. <br>
+                                            사장님 친절하시고 청소 상태 아주 좋아요. 화장실이 깨끗해서 좋았습니다. 날 풀리면 다시한번 가고 싶습니다
+                                        </div>
+                                        <div class="review_like">
+                                            <img src="./img/review_heart.png" alt=""><span>2</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="review_area">
+                                    <div class="score">
+                                        <div class="user_name">
+                                            <span class="profile"><img src="./img/profile.png" alt=""></span>
+                                            <span class="user">갱르꽁</span>
+                                        </div>
+                                        <div class="rate_star">
+                                            <span class="num"><img src="./img/small_star.png" alt=""></span>
+                                            <span class="date">2023.02.23</span>
+                                        </div>
+                                    </div>
+                                    <div class="review_cont">
+                                        <div class="user_room">
+                                            <strong>커플 102 객실 이용</strong>
+                                        </div>
+                                        <div class="eps">
+                                            깔끔하고 예뻤습니다. 저희가 도착했는데 직접 방 안내해주시고 친절하셨어요! <br>
+                                            눈이 온 뒤라 많이 추워서 방온도 올려주실수있냐고 했더니 바로 해주셔서 감사했어요! 숯불도 잘 세팅해주셨구요! <br>
+                                            한가지 아쉬운 점은 화장실이 너무 추워서 샤워할때 좀 곤욕이였어요.. 하지만 따뜻한 물은 잘 나와서 다행히였어요! <br>
+                                            날 풀리면 가는게 조금 더 좋을거 같아요! 그리고 고양이 너무 귀여워요!!
+                                        </div>
+                                        <div class="review_like">
+                                            <img src="./img/review_heart.png" alt=""><span>3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="review_area">
+                                    <div class="score">
+                                        <div class="user_name">
+                                            <span class="profile"><img src="./img/profile.png" alt=""></span>
+                                            <span class="user">아프로디테쏭</span>
+                                        </div>
+                                        <div class="rate_star">
+                                            <span class="num"><img src="./img/small_star.png" alt=""></span>
+                                            <span class="date">2023.01.17</span>
+                                        </div>
+                                    </div>
+                                    <div class="review_cont">
+                                        <div class="user_room">
+                                            <strong>스위트 202 객실 이용</strong>
+                                        </div>
+                                        <div class="eps">
+                                            친구네커플과 힐링여행다녀왔어요 <br>
+                                            숙소컨디션 최고입니다.가성비짱 <br>
+                                            저희는 구룡사돌고 참숯가마거쳐 횡성까사408가서 먹방여행하고 왔네요 <br>
+                                            내년에 또한번갈께요
+                                        </div>
+                                        <div class="review_like">
+                                            <img src="./img/review_heart.png" alt=""><span>5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="paginate_wrap">
+                            <div class="paginate">
+                                <a href="#" class="direction prev"><img src="./img/review_prev_btn.png" alt=""></a>
+                                <span>
+                                    <strong>1</strong>
+                                    <a href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                </span>
+                                <a href="#" class="direction next"><img src="./img/review_next_btn.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- reservation -->
+            <div class="reservation">
+                <div class="reservation_inner">
+                    <h3>일정</h3>
+                    <h2 class="place_name">커플 102</h2>
+                    <div class="date">
+                        <label for="check-in"> 체크인
+                            <input type="date" id="check-in" max="2000-01-01" min="2030-01-01" value="2023-06-15">
+                        </label>
+                        <label for="check-out"> 체크아웃
+                            <input type="date" id="check-out" max="2000-01-01" min="2030-01-01" value="2023-06-16">
+                        </label>
+                    </div>
+                    <div class="guest">
+                        <div class="guest_inner">
+                            <p>성인</p>
+                            <select id="guest_no">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="guest_inner">
+                            <p>아동</p>
+                            <select id="guest_no">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="guest_inner">
+                            <p>유아</p>
+                            <select id="guest_no">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                        <div class="guest_inner">
+                            <p>반려동물</p>
+                            <select id="guest_no">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="total_price">
+                        <p>최종 합계금액</p>
+                        <p class="price">78,570원</p>
+                    </div>
+
+                    <a href="#">
+                        <div class="btn_reservation">예약하기</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- 푸터 -->
+    <footer>
+        <div class="inner">
+            <div class="footer-menu">
+                <a href="#">회사소개</a>
+                <a href="#">이용약관</a>
+                <a href="#"><strong>개인정보처리방침</strong></a>
+                <a href="#">소비자 분쟁해결 기준</a>
+                <a href="#">사업자 정보확인</a>
+                <a href="#">여기어때 마케팅센터</a>
+                <a href="#">HOTEL 여기어때</a>
+                <a href="#">콘텐츠사업진흥법에의한 표시</a>
+            </div>
+        </div>
+
+
+
+        <div class="footer-cont">
+            <dl>
+                <dt>여기어때 Information</dt>
+                <dd>(주) 여기어때컴퍼니 : 정명훈<br>
+                    사업자등록번호: 742-86-00224<br>
+                    통신판매번호 : 2017-서울강남-01779<br>
+                    관광사업자 등록번호: 제1026-24호<br>
+                    호스팅서비스제공자의 상호 표시: (주)여기어때컴퍼니
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>Address & Contact</dt>
+                <dd class="tel"><a href="tel:02-1670 - 6250">대표번호 : 1670 - 6250</a><br>
+                    주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>Follow Us</dt>
+                <dd class="email"><a href="mailto:help@goodchoice.kr">전자우편주소 : help@goodchoice.kr</a></dd>
+                <div class="footer-sns">
+                    <a href="#"><img src="./img/facebook_icon.png" alt="페이스북"></a>
+                    <a href="#"><img src="./img/instagram_icon.png" alt="인스타그램"></a>
+                    <a href="#"><img src="./img/youtube_icon.png" alt="유튜브"></a>
+                </div>
+            </dl>
+        </div>
+    </footer>
+    
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="./img/top_btn.png" alt=""></button>
+
+
+</body>
+
+</html>

@@ -1,0 +1,648 @@
+@charset "UTF-8";
+
+/* common */
+h3 {
+    font-family: 'yg-jalnan';
+    font-size: 30px;
+    color: #1e1e1e;
+    padding: 30px 0;
+    border-top: 1px solid #d7d7d7;
+    width: 1012px;
+}
+
+
+/* main */
+
+.detail_page .main_info {
+    width: 1424px;
+    height: 184px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.detail_page .main_info h2 {
+    font-family: 'yg-jalnan';
+    font-size: 50px;
+}
+
+.detail_page .main_info_detail {
+    display: flex;
+    float: left;
+    padding-top: 20px;
+    width: 530px;
+    justify-content: space-between;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #989898;
+}
+
+.detail_page .main_info_detail p {
+    align-items: center;
+    display: flex;
+} 
+
+.detail_page .main_info_detail img {
+    padding: 0px 10px;
+} 
+
+.detail_page .main_info_detail a {
+    padding: 0px 8px;
+} 
+
+.detail_page .main_info_detail span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3a3a3a;
+}
+
+.detail_page .main_info_detail a {
+    color: #0066cc;
+}
+
+.detail_page .icon {
+    display: flex;
+    float: right;
+    padding-top: 20px;
+    width: 88px;
+    justify-content: space-between;
+}
+
+.detail_page .icon img {
+    cursor: pointer;
+}
+
+.main_wrap {
+    width: 1424px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_wrap_inner {
+    width: 1026px;
+    overflow: hidden;
+}
+
+.main_visual {
+    padding-top: 50px;
+}
+
+
+.gallery_slider {
+    width: 1012px;
+}
+
+.gallery_slider .bx-wrapper {
+    margin-bottom: 30px;
+}
+
+.gallery_slider .bx-controls-auto {
+    display: none;
+}
+
+.thumnail_img {
+    display: flex;
+    width: 1220px;
+    justify-content: space-between;
+}
+
+.thumnail_img img{
+    width: 188px;
+    height: 134px;
+}
+
+
+
+/* 객실타입 */
+.room_type {
+    padding-top: 50px;
+}
+
+.room_type_inner {
+    display: flex;
+    width: 1012px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.room_type .room_name {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.room_type .room_name h2 {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    color: #1e1e1e;
+    font-weight: bold;
+}
+
+.room_type .room_name a {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #848484;
+    display: flex;
+    width: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.room_type .room_detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 60px 0px;
+}
+
+.room_type .room_info {
+    /* width: 300px; */
+}
+
+.room_type .room_info .space {
+    display: flex;
+}
+
+.room_type .room_info .person {
+    display: flex;
+}
+
+.room_type .room_info p{
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e1e1e;
+    line-height: 30px;
+    width: 80px;
+    /* padding-left: 20px; */
+}
+
+.room_type .room_info span {
+    font-weight: normal;
+    color: #848484;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.room_type .room_price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.room_type .room_price .sale {
+    padding: 0px 10px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #b4b4b4;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #d80000;
+}
+
+.room_type .room_price .price {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: #1e1e1e;
+    font-size: 20px;
+    /* margin: 10px; */
+}
+
+.room_type .room_price .original-price {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    color: #c2c2c2;
+}
+
+.room_type .room_price .price_inner {
+    display: flex;
+    width: 156px;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+
+
+/* 숙소정보 */
+/* 편의시설 */
+
+.regulation h4 {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e1e1e;
+    padding: 30px 0px 20px 0px;
+}
+
+.regulation .offer_icon {
+    width: 620px;
+    display: flex;
+}
+
+.regulation .offer_icon ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 620px;
+}
+
+.regulation .offer_icon li span {
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    color: #7a7a7a;
+}
+
+.regulation .place_offer p {
+    line-height: 24px;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    color: #7a7a7a;
+}
+
+
+
+/* 고객리뷰 */
+.customer_review {
+    padding-top: 50px;
+    position: relative;
+    width: 1100px;
+}
+
+.customer_review .star_checked {
+    display: flex;
+    position: absolute;
+    top: 200px;
+    left: 90px;
+}
+
+.customer_review .rate {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #1e1e1e;
+    position: absolute;
+    top: 196px;
+    left: 250px;
+}
+
+.customer_review .rate span {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #646464;
+}
+
+
+.review_rate {
+    margin: 0 auto;
+    max-width: 570px;
+    float: right;
+    padding-right: 100px;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #646464;
+    padding-bottom: 50px;
+}
+
+.side {
+    float: left;
+    width: 15%;
+    /* margin-top: 10px; */
+}
+
+.middle {
+    float: left;
+    width: 70%;
+    margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 320px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff3f3;
+    text-align: center;
+    color: white;
+}
+
+/* Individual bars */
+.bar-5 {
+    width: 300px;
+    height: 6px;
+    background-color: #f7323f;
+    border-radius: 3px;
+}
+
+.bar-4 {
+    width: 64px;
+    height: 6px;
+    background-color: #f7323f;
+    border-radius: 3px;
+}
+
+.bar-3 {
+    width: 10%;
+    height: 6px;
+}
+
+.bar-2 {
+    width: 4%;
+    height: 6px;
+}
+
+.bar-1 {
+    width: 15%;
+    height: 6px;
+}
+
+.customer_review .number_rate {
+    display: flex;
+    width: 1012px;
+    height: 62px;
+    background-color: #fff3f3;
+    border-radius: 31px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.customer_review .number_rate p {
+    color: #434242;
+    font-size: 16px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+.customer_review .number_rate p::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 15px;
+    background-color: rgba(247, 50, 63, 0.5);
+    margin: 0 90px;
+}
+
+.customer_review .number_rate p:first-child::before{
+    display: none;
+}
+
+.customer_review .number_rate span {
+    color: #f7323f;
+    font-size: 18px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.customer_review .list_review .review_menu {
+    display: flex;
+    width: 1014px;
+    justify-content: space-between;
+    padding: 50px 0px 20px 0px; 
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.customer_review .list_review .review_menu p {
+    color: #1e1e1e;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+}
+
+.customer_review .list_review .review_menu #review {
+    color: #717171;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    border: none;
+}
+
+.customer_review .list_review .review_area {
+    padding: 30px 0px;
+    width: 1014px;
+    border-bottom: 1px solid #b4b4b4;
+    position: relative;
+    /* display: flex; */
+}
+
+.review_area .user {
+    color: #1e1e1e;
+    font-size: 16px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    padding: 10px;
+}
+
+.review_cont {
+    color: #1e1e1e;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+.rate_star {
+    padding-top: 10px;
+    position: relative;
+}
+
+.rate_star .date {
+    color: #989898;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    position: absolute;
+    top: 16px;
+    padding-left: 16px;
+}
+
+.review_like {
+    padding-top: 10px;
+}
+
+.review_like span{
+    color: #989898;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    padding-left: 6px;
+}
+
+.photo_review {
+    position: absolute;
+    top: 60px;
+    left: 720px;
+}
+
+.paginate_wrap {
+    width: 1014px;
+    padding: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.paginate {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.paginate span {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    color: #989898;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+}
+
+/* reservation */
+.reservation {
+    position: sticky;
+    top: 50px;
+    /* margin-top: 50px; */
+    width: 380px;
+    height: 550px;
+    z-index: 1000;
+}
+
+.reservation_inner {
+    background-color: #fff;
+    border: 1px solid #7a7a7a;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.reservation .reservation_inner h3 {
+    color: #f7323f;
+    font-size: 18px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    padding: 10px 0px;
+    border-top: none;
+    width: 100%;
+}
+
+.reservation .reservation_inner .place_name {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 30px;
+    color: #1e1e1e;
+    font-weight: bold;
+    padding: 10px 0px 30px 0px;
+}
+
+.reservation .reservation_inner .date {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    color: #696969;
+    font-size: 14px;
+    display: flex;
+    padding: 30px 0px;
+}
+
+.reservation .reservation_inner .date #check-out{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reservation .reservation_inner #check-in {
+    border: none;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: #1e1e1e;
+    font-size: 20px;
+}
+
+.reservation .reservation_inner #check-out {
+    border: none;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: #1e1e1e;
+    font-size: 20px;
+}
+
+.reservation .reservation_inner .guest {
+    display: flex;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #696969;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reservation .reservation_inner .guest .guest_inner {
+    text-align: center;
+}
+
+.reservation .reservation_inner .guest .guest_inner p {
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.reservation .reservation_inner #guest_no {
+    border: none;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: #1e1e1e;
+    font-size: 16px;
+    transform: translate(5px);
+}
+
+.reservation .reservation_inner .total_price {
+    display: flex;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    color: #1e1e1e;
+    padding: 30px 0px;
+    justify-content: space-between;
+}
+
+.reservation .reservation_inner .total_price .price {
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    color: #1e1e1e;
+    font-size: 24px;
+}
+
+.reservation .btn_reservation {
+    width: 318px;
+    height: 50px;
+    background-color: #f7323f;
+    color: #fff;
+    border-radius: 10px;
+    font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /* display: none;
+    -webkit-appearance: none; */
+}
+

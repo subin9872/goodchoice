@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maxinum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>여기어때</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <link rel="stylesheet" href="./css/search.css">
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <div class="tab_menu">
+        <div class="domestic active">
+            <span>국내 숙소</span>
+        </div>
+        <div class="oversea">
+            <span>해외 숙소</span>
+        </div>
+        <div class="leisure">
+            <span>레저.티켓</span>
+        </div>
+    </div>
+
+    <div class="search_on">
+        
+        <div class="search_bar">
+            <a href="./index.html"><div class="back_btn"><img src="./img/arrow_prev.png" alt=""></div></a>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="지역, 숙소명을 입력하세요">
+                <button type="submit" class="searchButton"><img src="./img/search_grey.png" alt="검색"></button>
+            </div>
+        </div>
+        <div class="near">
+            <img src="./img/place.png" alt="">
+            <p>내 주변 검색</p>
+            <div class="next_btn"><img src="./img/arrow_next.png" alt=""></div>
+        </div>
+
+        <div class="pop_area">
+            <h2>인기 지역</h2>
+            <ul>
+                <li><a href="#"><img src="./img/sokcho.png" alt="">
+                        <p>속초</p>
+                    </a></li>
+                <li><a href="#"><img src="./img/yeosu.png" alt="">
+                        <p>여수</p>
+                    </a></li>
+                <li><a href="#"><img src="./img/jeju.png" alt="">
+                        <p>제주도</p>
+                    </a></li>
+                <li><a href="#"><img src="./img/pohang.png" alt="">
+                        <p>포항</p>
+                    </a></li>
+                <li><a href="#"><img src="./img/namhae.png" alt="">
+                        <p>남해</p>
+                    </a></li>
+                <li><a href="#"><img src="./img/busan.png" alt="">
+                        <p>부산</p>
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="today_promo">
+            <h2>오늘의 특가</h2>
+            <div class="todayroom">
+                <img src="./img/todays01.png" alt="">
+                <div class="item-info">
+                    <span class="place">국내숙소</span>
+                    <p class="tit">전주 시그니처 호텔</p>
+                    <div class="cont">
+                        <p class="sale">60%</p>
+                        <p class="price">89,500원</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="todayroom">
+                <img src="./img/todays02.png" alt="">
+                <div class="item-info">
+                    <span class="place">국내숙소</span>
+                    <p class="tit">로얄호텔 서울</p>
+                    <div class="cont">
+                        <p class="sale">11%</p>
+                        <p class="price">207,900원</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="todayroom">
+                <img src="./img/todays03.png" alt="">
+                <div class="item-info">
+                    <span class="place">국내숙소</span>
+                    <p class="tit">서머셋 제주신화월드</p>
+                    <div class="cont">
+                        <p class="sale">59%</p>
+                        <p class="price">484,000원</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="docbar">
+        <div class="docbar_inner">
+            <div class="quick_srch"
+                style="background: url(./img/docbar_quicksrch02.png) no-repeat top center; background-size: 100%;">
+                <img src="./img/search.png" alt="">
+                <p>빠른검색</p>
+            </div>
+            <div class="quick_icon">
+                <div><a href="./index.html"><img src="./img/home.png" alt="">
+                        <p>홈</p>
+                    </a>
+                </div>
+                <div class="doc_search"><a href="./search.html"><img src="./img/search.png" alt="">
+                        <p>검색</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./img/near.png" alt="">
+                        <p>내 주변</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./img/like.png" alt="">
+                        <p>찜</p>
+                    </a>
+                </div>
+                <div><a href="#"><img src="./img/profile.png" alt="">
+                        <p>내 정보</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><img src="./img/top_btn.png" alt=""></button>
+</body>
+
+</html>
